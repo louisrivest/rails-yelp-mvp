@@ -1,0 +1,25 @@
+<h1> Hello </h1>
+
+<p>  Name:
+<%= @resto.name %>
+</p>
+
+<p>  Address:
+<%= @resto.address %>
+</p>
+
+<p>  Phone Number:
+<%= @resto.phone_number %>
+</p>
+
+<p>  Category:
+<%= @resto.category %>
+</p>
+
+
+<div>
+  <%= link_to "Edit this restaurant", edit_restaurant_path(@resto) %> |
+  <%= link_to "Back to restaurants", restaurants_path %>
+
+  <%= button_to "Destroy this restaurant", @restaurant, method: :delete %>
+</div>
